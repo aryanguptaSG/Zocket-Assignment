@@ -1,0 +1,66 @@
+### // Fetch All Product
+GET http://localhost:3001/get-all-Product
+
+
+### // Add Product
+POST http://localhost:3001/add-Product
+Content-Type: application/json
+
+{
+    "icon": "./images/strawberry.svg",
+    "heading": "Strawberry cakes with blueberry",
+    "subheading": "Rs: 2,345"
+}
+
+
+### // Fetch All Campaign
+GET http://localhost:3001/get-all-campaign
+
+
+### // Create New Campaign
+POST http://localhost:3001/create-new-campaign
+Content-Type: application/json
+
+{
+    "OnOff":1,
+    "Name":"Cup cakes campaign",
+    "Poster":"./images/pre4.svg",
+    "CreateDate":"Created on 12 Jun",
+    "StartDate":"25Jul2020",
+    "EndDate":"1Aug2020",
+    "Clicks":123,
+    "Budget":"INR.3,400",
+    "Location":"Coimbatore",
+    "Plateform":"./images/google.svg",
+    "Status":"1"
+}
+
+
+### Delete Campaign
+DELETE http://localhost:3001/delete-campaign
+Content-Type: application/json
+
+{
+    "id":1
+}
+
+
+
+### update a campaign
+PUT http://localhost:3001/update-campaign
+Content-Type: application/json
+
+{
+    "id":5,
+    "OnOff":"0",
+    "Status":"0"
+}
+
+
+### update All campaign
+PUT http://localhost:3001/update-all
+Content-Type: application/json
+
+{
+    "On":0
+}
